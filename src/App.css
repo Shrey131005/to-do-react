@@ -28,7 +28,7 @@ body{
 .mainButton:hover {background-color: #1864c7}
 
 .mainButton:active {
-  background-color: ;
+  background-color: #1c5db2;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -43,7 +43,7 @@ body{
   max-height: 80vh;
   overflow-y: auto;
   box-shadow: 0px 5px 7px rgb(27, 27, 27);
-  
+  border-radius: 5px;
   }
 
 .todo-input{
@@ -54,6 +54,7 @@ body{
   border-bottom: 1px solid rgb(78, 78, 78);
   padding-bottom: 25px;
   margin-bottom: 25px;
+  border-radius: 5px;
 }
 
 .todo-input-item{
@@ -61,11 +62,29 @@ body{
   flex-direction: column;
   align-items: flex-start;
   margin-right: 25px;
+  border-radius: 5px;
+}
+
+.input-task{
+  border-radius: 5px;
+}
+
+.input-task:focus{
+  outline: 5px solid #1c5db2;
+}
+
+.input-description{
+  border-radius: 5px;
+}
+
+.input-description:focus{
+  outline: 5px solid #1c5db2;
 }
 
 .todo-input-item label{
   font-weight: bold;
   margin-bottom: 10px;
+  
 }
 .todo-input-item input{
   padding: 8px;
@@ -78,20 +97,28 @@ body{
 }
 
 .primaryBtn{
-  background-color: #1c5db2;
-  color: white;
-  border:none;
-  border-radius: 0px;
-  margin-top: 25px;
   padding: 10px;
+  font-size: 20px;
   width: 60px;
+  text-align: center;
+  margin-top: 22px;
   cursor: pointer;
-  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  background-color: #1c5db2; 
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 5px #999;
 }
 
 .primaryBtn:hover{
   background-color: #1c5db2;
   
+}
+.primaryBtn:active {
+  background-color: #1c5db2;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .secondaryBtn{
@@ -169,6 +196,7 @@ body{
   font-size: 28px;
   cursor: pointer;
   margin-left: 10px;
+  transition: all 0.3s;
 }
 
 .icon:hover{
@@ -180,17 +208,19 @@ body{
   margin-left: 10px;
   color:#1c5db2;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .check-icon:hover{
-  color: #1c5db2);
+  color: rgb(7, 209, 67);
 }
 
 .icon-edit{
   font-size: 28px;
   margin-left: 10px;
-  color:#1c5db2);
+  color:white;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .icon-edit:hover{
   color: #1c5db2;

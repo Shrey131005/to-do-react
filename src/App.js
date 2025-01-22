@@ -109,11 +109,11 @@ function App() {
         <div className="todo-input">
           <div className="todo-input-item">
             <label> Title</label>
-            <input type="text" value={newTitle} onChange={(e) => setNewTitle(e.target.value)} placeholder="Enter Task Title" />
+            <input className="input-task" type="text" value={newTitle} onChange={(e) => setNewTitle(e.target.value)} placeholder="Enter Task Title" />
           </div>
           <div className="todo-input-item">
             <label> Description</label>
-            <input type="text" value={newDescription} onChange={(e) => setNewDescription(e.target.value)} placeholder="Enter Task Description" />
+            <input className="input-description" type="text" value={newDescription} onChange={(e) => setNewDescription(e.target.value)} placeholder="Enter Task Description" />
           </div>
           <div className="todo-input-item">
             <button type="button" onClick={handleAddTodo} className="primaryBtn">
